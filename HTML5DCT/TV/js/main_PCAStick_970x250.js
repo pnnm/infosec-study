@@ -17,7 +17,7 @@ function ione_loadOnStart() {
   function e() {
     iONEinternal.ione_app_path = ione_protocal + "//" + iONEinternal.hostName + "/HTML5DCT";
     location.search != "" ? iONEorgelement.ione_debug = location.search.split("?rt=")[1] : iONEorgelement.ione_debug = "";
-    iONEorgelement.cp = iONEinternal.ione_app_path + "/config/" + iONEinternal.aid + "/" + configId + ".js?" + (new Date).getTime() / 1e3;
+    iONEorgelement.cp = iONEinternal.ione_app_path + "/creative_config/" + iONEinternal.aid + "/" + configId + ".js?" + (new Date).getTime() / 1e3;
     iONEinternal.aid = iONEinternal.aid;
     iONEorgelement.ione_evidon();
     iONEgeneral.ione_loadjs(iONEorgelement.cp);
